@@ -1,0 +1,33 @@
+<section class="container">
+  <div class="avatar">
+    <img src="https://source.unsplash.com/random/?Cryptocurrency/" alt="avatar">
+  </div>
+  <form action="#" class="form">
+    <div class="input-box">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name" required [(ngModel)]="fullName" name="fullName" />
+    </div>
+
+    <div class="input-box">
+      <label>Email Address</label>
+      <input type="text" placeholder="Enter email address" required [(ngModel)]="emailAddress" name="emailAddress" />
+    </div>
+
+    <div class="column">
+      <div class="input-box">
+        <label>Phone Number</label>
+        <input type="number" placeholder="Enter phone number" required [(ngModel)]="phoneNumber" name="phoneNumber" />
+      </div>
+    </div>
+    <div class="input-box address">
+      <label>Address</label>
+      <input type="text" placeholder="Enter street address" required [(ngModel)]="streetAddress" name="streetAddress" />
+
+      <div class="column">
+        <input type="text" placeholder="Enter your region" required [(ngModel)]="region" name="region" />
+        <input type="number" placeholder="Enter postal code" required [(ngModel)]="postalCode" name="postalCode" />
+      </div>
+    </div>
+    <button (click)="onSubmit()">Save</button>
+  </form>
+</section>
