@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angu
 })
 export class EditContactComponent implements OnChanges {
   @Input() contact;
+  @Output() cancel: EventEmitter<any> = new EventEmitter();
   emojiPickerVisible;
   message = '';
   fullName: string = '';

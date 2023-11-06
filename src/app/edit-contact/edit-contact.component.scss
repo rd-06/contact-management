@@ -122,6 +122,14 @@
 .form button:hover {
   background: #D2122E;
 }
+
+.cancelBtn{
+  background: none !important;
+    color: #E52B50 !important;
+    border: 1px solid #E52B50 !important;
+    height: 40px !important;
+}
+
 /*Responsive*/
 @media screen and (max-width: 500px) {
   .form .column {
