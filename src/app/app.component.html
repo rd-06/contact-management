@@ -1,6 +1,6 @@
 <div id="mainContainer">
-  <app-sidebar (contactClicked)="onContactSelected($event)"></app-sidebar>
-  <div id="chat">
+  <app-sidebar [class.hide]="listContact" (contactClicked)="onContactSelected($event)"></app-sidebar>
+  <div id="chat" [class.hide]="editContact">
     <div id="chatPlaceholder" *ngIf="!contact">
       <img width="200" src="../assets/images/intouchapp-logo-512.png" />
       <h2>Keep your phone connected</h2>
@@ -9,7 +9,7 @@
 
     </div>
 
-    <app-edit-contact [contact]="contact" *ngIf="contact"></app-edit-contact>
+    <app-edit-contact [contact]="contact" *ngIf="contact" (cancel)="onCancel($event)"></app-edit-contact>
   </div>
 </div>
 
