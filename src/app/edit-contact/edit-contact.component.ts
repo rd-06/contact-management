@@ -30,7 +30,6 @@ export class EditContactComponent implements OnChanges {
   onSubmit() {
 
     if (this.fullName && this.emailAddress && this.phoneNumber && this.streetAddress && this.region && this.region && this.region) {
-      console.log('submit');
       this.contact.fullName = this.fullName;
       this.contact.emailAddress = this.emailAddress;
       this.contact.phoneNumber = this.phoneNumber;
@@ -43,12 +42,9 @@ export class EditContactComponent implements OnChanges {
 
 
       const index = parsedContacts.findIndex((item: any) => item.id === this.contact.id);
-      console.log(index);
 
       // if (index !== -1) {
       parsedContacts[index] = this.contact;
-      console.log('in', parsedContacts);
-      console.log('this.contact', this.contact);
       // }
 
       localStorage.setItem('contacts', JSON.stringify(parsedContacts));
