@@ -29,10 +29,11 @@
         height: 100%;
         display: flex;
         align-items: center;
-        width: 110px;
+        width: 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
       }
     }
 
@@ -65,20 +66,12 @@
     }
   }
 
-  #noConversations {
-    padding-top: 30px;
-    text-align: center;
-    color: #b9b9b9;
-    font-size: 18px;
-
-    font-weight: 100;
-  }
 
   #sidebarContent {
     flex-grow: 1;
     overflow: auto;
 
-    .conversation {
+    .contacts {
       height: 67px;
       display: flex;
       padding-right: 5px;
@@ -103,7 +96,7 @@
         flex-grow: 1;
         padding: 13px 0px;
         padding-right: 10px;
-        .conversationHeader {
+        .contactHeader {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
