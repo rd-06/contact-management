@@ -40,9 +40,9 @@ export class AppComponent implements OnInit {
   onResize(event: Event): void {
     this.screenWidth = window.innerWidth;
 
-    if (this.screenWidth < 800) {
+    if (this.screenWidth < 800 && !this.contact) {
       this.editContact = true;
-    } else {
+    } else if (!this.contact) {
       this.editContact = false;
       this.listContact = false;
     }

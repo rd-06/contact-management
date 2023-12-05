@@ -108,8 +108,8 @@
   font-size: 1rem;
 }
 .form button {
-  height: 55px;
-  width: 100%;
+  // height: 55px;
+  width: 50%;
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
@@ -123,11 +123,17 @@
   background: #D2122E;
 }
 
+.btnContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
 .cancelBtn{
   background: none !important;
     color: #E52B50 !important;
     border: 1px solid #E52B50 !important;
     height: 40px !important;
+    margin-left: 1rem;
 }
 
 /*Responsive*/
@@ -139,3 +145,9 @@
     row-gap: 15px;
   }
 }
+
+// @media screen and (max-width: 800px) {
+//   .avatar{
+//     display: none;
+//   }
+// }

@@ -28,7 +28,9 @@
         <input type="number" placeholder="Enter postal code" required [(ngModel)]="postalCode" name="postalCode" />
       </div>
     </div>
-    <button (click)="onSubmit()">Save</button>
-    <button class="cancelBtn" (click)="cancel.emit()">Back</button>
+    <div class="btnContainer">
+      <button (click)="onSubmit()">Save</button>
+      <button class="cancelBtn" (click)="cancel.emit()">Back</button>
+    </div>
   </form>
 </section>

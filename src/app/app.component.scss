@@ -13,7 +13,7 @@
   border-radius: 3px;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  overflow: scroll;
 
   app-sidebar {
     flex-basis: 30%;
